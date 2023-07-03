@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wolfy Alphas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="anoelo.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex flex-col items-center justify-center h-screen drop-shadow">
+      <div class="preview floating">
+        <div class="flex justify-center">
+          <div class="relative flex py-2 px-3 font-bold rounded-full bg-wolfy-2 text-white">
+            <div class="absolute inline-flex items-center justify-center -left-0.5 bottom-0 bg-alpha w-10 h-10 rounded-full">
+              <span class="level"></span>
+            </div>
+            <span class="name ml-8"></span>
+          </div>
+        </div>
+        <div class="relative flex flex-col">
+          <img class="h-80 z-50" src="https://wolfy.net/api/skin/render/user.svg?id=050a34cf-05e0-46d6-aaf7-ee56fe92e76d&v=PBPYWJOU7V&s=f57f15a2-b19e-457c-993d-688241377912" alt="avatar default"/>
+          <img class="-mt-6 h-20 -z-50" src="https://wolfy.net/static/img/assets/plateform.svg" alt="platform levitation">
+        </div>
+        <div class="relatve flex justify-center items-center -mt-8">
+          <img class="absolute rounded-full w-45 -z-50" src="https://wolfy.net/static/img/assets/eloBg.svg" alt="background elo">
+          <img class="w-4" src="https://wolfy.net/static/img/icons/leaderboard-icon.svg" alt="leaderbord icon">
+          <p class="elo text-center text-xs font-bold text-white ml-2"></p>
+        </div>
+      </div>
+      <div class="relative bg-wolfy rounded-xl p-5 mt-16">
+        <div class="flex items-center	absolute  left-5 -top-4 text-white bg-wolfy-2 rounded-full font-bold text-xs px-3 py-2">
+          <img src="https://wolfy.net/static/img/icons/search.svg" class="h-3" alt="">
+          <p class="ml-1">Champ de recherche</p>
+        </div>
+        <input type="text"  maxlength="16" class="name font-sans font-semibold block w-64 py-2.5 px-5 placeholder:text-gray-400 placeholder:font-normal	w-50 mt-2 p-2 text-xs text-white rounded-full bg-wolfy-2 border-transparent focus:outline-none focus:border-transparent focus:ring-0" placeholder="Pseudo anonyme" required>
+        <div class="result text-white text-center font-semibold absolute top-24 left-0 right-0"></div>
+    </main>
+    <script src="anoelo.js"></script>
+  </body>
+</html>
